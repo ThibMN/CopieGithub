@@ -1,6 +1,9 @@
 body{
+    font-family: 'Inter', 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
+    color: #24292e;
     background-color: #0D1117;
     margin: 0;
+    padding: 0;
 }
 
 span{
@@ -64,10 +67,36 @@ span{
 }
 
 .SearchInput {
-    width: 260px; /* Définit la longueur */
+    width: 12rem;
     padding: 5px 10px;
     font-size: 14px;
-    border: 1px solid #ccc; /* Ajustez les styles de bordure si nécessaire */
+    border: 1px solid #ccc;
     border-radius: 4px;
     outline: none;
+}
+
+button {
+    font-size: 14px;
+    font-weight: 500;
+    color: #24292e;
+    background-color: #f6f8fa;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    padding: 6px 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+button:hover {
+    background-color: #e1e4e8;
+    border-color: #c6cbd1;
+}
+
+button:active {
+    background-color: #d1d5da;
+    border-color: #afb8c1;
 }
