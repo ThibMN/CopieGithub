@@ -29,15 +29,13 @@ span{
 }
 
 .MainHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
     padding: 10px !important;
     background-color: black;
+    flex-wrap: wrap;
 }
 
 .RepoInfos{
+    margin-left: 0.5rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -70,17 +68,39 @@ span{
     width: 12rem;
     padding: 5px 10px;
     font-size: 14px;
-    border: 1px solid #ccc;
+    color:#ffffff;
+    background-color: #000000;
+    border: 1px solid rgb(60, 60, 60);
     border-radius: 4px;
     outline: none;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+nav{
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 1rem;
+}
+
+nav button{
+    color:white;
+    background-color: black;
+    border: 0px;
+}
+
+nav button:hover{
+    background-color: rgb(60, 60, 60);
 }
 
 button {
     font-size: 14px;
     font-weight: 500;
-    color: #24292e;
-    background-color: #f6f8fa;
-    border: 1px solid #d1d5da;
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid rgb(60, 60, 60);
     border-radius: 6px;
     padding: 6px 6px;
     cursor: pointer;
@@ -88,15 +108,18 @@ button {
     align-items: center;
     gap: 5px;
     text-align: center;
-    transition: background-color 0.2s, border-color 0.2s;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
 }
 
+input:hover,
 button:hover {
-    background-color: #e1e4e8;
+    background-color: rgb(60, 60, 60);
     border-color: #c6cbd1;
+    transform: scale(1.1);
 }
 
+input:active,
 button:active {
-    background-color: #d1d5da;
+    background-color: rgb(30, 30, 30);
     border-color: #afb8c1;
 }
