@@ -1,7 +1,42 @@
 body{
-    background-color: black;
+    background-color: #0D1117;
 }
 
 span{
     color: white;
+}
+
+.avatar{
+    border-radius: 50%;
+}
+
+.MainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    background-color: black;
+}
+
+.RepoInfos{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.RepoInfosEnd{
+    position: absolute;
+    display:flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
+    top: 0;
+    right: 0;
 }
