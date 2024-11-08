@@ -1,5 +1,6 @@
 body{
     background-color: #0D1117;
+    margin: 0;
 }
 
 span{
@@ -7,7 +8,21 @@ span{
 }
 
 .avatar{
+    display: block;
     border-radius: 50%;
+    margin-left: auto;
+}
+
+.AvatarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ButtonGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .MainHeader {
@@ -15,7 +30,7 @@ span{
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 10px;
+    padding: 10px !important;
     background-color: black;
 }
 
@@ -29,14 +44,30 @@ span{
     gap: 1em;
 }
 
-.RepoInfosEnd{
+.RepoInfosEnd {
     position: absolute;
-    display:flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 1em;
     top: 0;
     right: 0;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 10px;
+}
+
+.RepoInfosEnd img{
+    align-self: flex-end;
+}
+
+.SearchBar {
+    display: flex;
+    align-items: center;
+}
+
+.SearchInput {
+    width: 260px; /* Définit la longueur */
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc; /* Ajustez les styles de bordure si nécessaire */
+    border-radius: 4px;
+    outline: none;
 }
