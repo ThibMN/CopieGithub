@@ -3,11 +3,20 @@ body{
     color: #24292e;
     background-color: #0D1117;
     margin: 0;
-    padding: 0;
+    padding-bottom: 4rem;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
 }
 
 span{
     color: white;
+}
+
+h1,h2,h3,h4{
+    color:white;
 }
 
 .avatar{
@@ -22,6 +31,235 @@ span{
     justify-content: center;
 }
 
+.avatar2{
+    display: block;
+    border-radius: 50%;
+}
+
+.TitleAndAvatarContainer{
+    position: absolute;
+    left: 0px;
+    margin-left: 20%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+}
+
+.PublicIndicator{
+    color: #9198a1;
+    border: 1px solid rgb(60, 60, 60);
+    border-radius: 15px;
+    font-size: small;
+    padding: 0.2rem;
+}
+
+.RepoButtons{
+    position: absolute;
+    margin-top: 20px;
+    right: 0px;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.RepoButtons2{
+    position: absolute;
+    margin-top: 80px;
+    left: 0px;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.RepoButtons2Right{
+    position: absolute;
+    margin-top: 80px;
+    right: 0px;
+    margin-right: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.RepoButtons2Right button,
+.RepoButtons2 button,
+.RepoButtons button{
+    background-color: #212830;
+}
+
+.RepoButtons2Right button:hover,
+.RepoButtons2 button:hover,
+.RepoButtons button:hover{
+    background-color: #2f3944;
+}
+
+#RepoCodeButton{
+    background-color: #238636;
+}
+
+#RepoCodeButton:hover{
+    background-color: #30b94b;
+    border-color: #96ffab;
+}
+
+.separator1 {
+    position:absolute;
+    width: 60%;
+    height: 1px;
+    background-color: rgb(60, 60, 60);
+    /*margin: 20px auto;*/
+    margin-top:70px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.RepoContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.AboutSection{
+    position: absolute;
+    display: flex;
+    margin-top: 65px;
+    margin-left: 66%;
+    flex-direction: column;
+    gap:0.8rem;
+}
+
+.AboutSection span{
+    color: #8b919a;
+}
+
+.separator2 {
+    position:absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(60, 60, 60);
+    /*margin: 20px auto;*/
+    margin-top:275px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.separator3 {
+    position:absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(60, 60, 60);
+    /*margin: 20px auto;*/
+    margin-top:380px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.separator4 {
+    position:absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(60, 60, 60);
+    /*margin: 20px auto;*/
+    margin-top:500px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.separator5 {
+    position:absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(60, 60, 60);
+    /*margin: 20px auto;*/
+    margin-top:600px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.FileListContainer {
+    position: absolute;
+    top: 250px;
+    left: 20%;
+    width: 40%;
+    background-color: #161b22;
+    border: 1px solid rgb(60, 60, 60);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.FileListTitle {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.FileList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.FileItem {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+.FileItem:last-child {
+    border-bottom: none;
+}
+
+.FileIcon {
+    margin-right: 0.5rem;
+    color: #8b919a;
+}
+
+.FileItem a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.FileItem a:hover {
+    text-decoration: underline;
+}
+
+.ReadmeContainer {
+    position: absolute;
+    top: 500px; /* Ajuste cette valeur en fonction de la hauteur de la liste des fichiers */
+    left: 20%;
+    width: 40%;
+    background-color: #161b22;
+    border: 1px solid rgb(60, 60, 60);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.ReadmeTitle {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.ReadmeContent {
+    font-size: 14px;
+    color: #c9d1d9;
+    line-height: 1.5;
+}
+
+.ReadmeContent p {
+    margin-bottom: 1rem;
+}
+
 .ButtonGroup {
     display: flex;
     align-items: center;
@@ -32,6 +270,7 @@ span{
     padding: 10px !important;
     background-color: black;
     flex-wrap: wrap;
+    border-bottom: 1px solid rgb(60, 60, 60);
 }
 
 .RepoInfos{
@@ -73,7 +312,7 @@ span{
     border: 1px solid rgb(60, 60, 60);
     border-radius: 4px;
     outline: none;
-    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 nav{
@@ -91,8 +330,13 @@ nav button{
     border: 0px;
 }
 
+.LessVisibleButton:hover,
 nav button:hover{
     background-color: rgb(60, 60, 60);
+}
+
+.CodeButton{
+    border: 1px solid #f78166;
 }
 
 button {
@@ -108,7 +352,7 @@ button {
     align-items: center;
     gap: 5px;
     text-align: center;
-    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 input:hover,
@@ -122,4 +366,172 @@ input:active,
 button:active {
     background-color: rgb(30, 30, 30);
     border-color: #afb8c1;
+}
+
+.LessVisibleButton button{
+    background-color: #0D1117;
+}
+
+.Footer {
+    width: 100%;
+    background-color: #000000;
+    border-top: 1px solid rgb(60, 60, 60);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+}
+
+.FooterContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: #8b949e;
+    font-size: 14px;
+}
+
+.FooterLink {
+    color: rgb(60, 60, 60);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.FooterLink:hover {
+    text-decoration: underline;
+}
+
+.FooterText {
+    color: #8b949e;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+    .TitleAndAvatarContainer {
+        margin-left: 10%;
+    }
+
+    .RepoButtons {
+        margin-right: 10%;
+    }
+
+    .AboutSection {
+        margin-left: 76%;
+    }
+
+    .FileListContainer, .ReadmeContainer {
+        left: 10%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .TitleAndAvatarContainer {
+        margin-left: 5%;
+    }
+
+    .RepoButtons {
+        margin-right: 5%;
+    }
+
+    .RepoButtons2 {
+        margin-left: 5%;
+    }
+
+    .RepoButtons2Right {
+        margin-right: 5%;
+    }
+
+    .AboutSection {
+        position: relative;
+        margin-left: 0;
+        width: 90%;
+        margin: 120px auto 0;
+    }
+
+    .FileListContainer, .ReadmeContainer {
+        left: 5%;
+        width: 80%;
+    }
+
+    .separator1, .separator2, .separator3, .separator4, .separator5 {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .TitleAndAvatarContainer {
+        position: relative;
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .RepoInfosEnd{
+        margin-top:50px;
+    }
+
+    .RepoButtons {
+        position: relative;
+        margin: 20px auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .RepoButtons2, .RepoButtons2Right {
+        position: relative;
+        margin: 10px auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .SearchInput {
+        width: 100%;
+    }
+
+    .FileListContainer, .ReadmeContainer {
+        position: relative;
+        left: 0;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    nav {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 0 1rem;
+    }
+
+    .RepoInfos, .RepoInfosEnd {
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ButtonGroup {
+        flex-direction: row;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .SearchBar {
+        width: 100%;
+    }
+
+    .FooterContent {
+        text-align: center;
+        flex-wrap: wrap;
+    }
 }
