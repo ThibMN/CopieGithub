@@ -12,6 +12,10 @@ body{
     flex-direction: column;
 }
 
+main {
+    animation: fadeIn 1s ease-in;
+}
+
 span{
     color: white;
 }
@@ -272,6 +276,8 @@ h1,h2,h3,h4{
     background-color: black;
     flex-wrap: wrap;
     border-bottom: 1px solid rgb(60, 60, 60);
+    animation: slideInFromTop 1s ease-out;
+    
 }
 
 .RepoInfos{
@@ -283,6 +289,7 @@ h1,h2,h3,h4{
     flex-direction: row;
     justify-content: flex-start;
     gap: 1em;
+    animation: slideIn 1s ease-out;
 }
 
 .RepoInfosEnd {
@@ -293,6 +300,7 @@ h1,h2,h3,h4{
     align-items: center;
     gap: 1em;
     padding: 10px;
+    animation: slideInFromRight 1s ease-out;
 }
 
 .RepoInfosEnd img{
@@ -323,6 +331,7 @@ nav{
     align-items: center;
     justify-content:flex-start;
     gap: 1rem;
+    animation: slideIn 1s ease-out;
 }
 
 nav button{
@@ -384,6 +393,7 @@ button:active {
     margin: 0 auto;
     position: fixed;
     bottom: 0;
+    animation: slideInFromBottom 1s ease-out;
 }
 
 .FooterContent {
@@ -548,5 +558,58 @@ button:active {
         margin-left: 0;
         width: 90%;
         margin: 50px auto 0;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
