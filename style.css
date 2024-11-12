@@ -400,9 +400,11 @@ button:active {
     color: rgb(60, 60, 60);
     text-decoration: none;
     font-size: 14px;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 .FooterLink:hover {
+    color: #8b949e;
     text-decoration: underline;
 }
 
@@ -437,8 +439,16 @@ button:active {
 }
 
 @media screen and (max-width: 992px) {
+    body{
+        padding-bottom: 300px;
+    }
+    
     .TitleAndAvatarContainer {
         margin-left: 5%;
+    }
+
+    .RepoButtons2Right .SearchInput{
+        width: 12rem;
     }
 
     .RepoButtons {
@@ -478,6 +488,10 @@ button:active {
         margin-left: 0;
         justify-content: center;
         width: 100%;
+    }
+
+    .RepoButtons2Right .SearchInput{
+        width: 12rem;
     }
     
     body{
